@@ -1,0 +1,25 @@
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: 'Courier New', Courier, monospace;
+
+}
+.timeBox {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	font-size: xx-large;
+}
+.t {
+	border: 3px solid black;
+  width: 60px;
+  height: 60px;
+	 display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+}
