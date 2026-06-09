@@ -35,9 +35,14 @@ const Timer = ()=> {
 		setStarted(true);		
 	}
 	const pauseClick = () => {
-   
+   setStarted(false);
   };
-	const resumeClick = () => {};
+	const resetClick = () => {
+		setHours(10);
+		setMinutes(59);
+		setSeconds(60);
+		setStarted(false);
+	};
 	return (
     <>
       <div className="container">
@@ -53,7 +58,7 @@ const Timer = ()=> {
               <div className="buttonGroup">
                 <button onClick={pauseClick}>Pause</button>
 
-                <button onClick={resumeClick}>Resume</button>
+                <button onClick={resetClick}>Reset</button>
               </div>
             ) : (
               <button onClick={startClick}>Start</button>
